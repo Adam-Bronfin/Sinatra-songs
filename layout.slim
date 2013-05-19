@@ -1,0 +1,15 @@
+- title="Songs by Sinatra"
+html
+  head
+    title== @title || "Songs by Sinatra"
+    link href="style.css" rel="stylesheet"
+  body
+    header
+      h1 = title
+      nav
+        ul
+          li <a href="/" title="home">Home</a>
+          li <a href="/about" title="about">About</a>
+          li <a href="/contact" title="contact">Contact</a>
+    section
+      == yield
