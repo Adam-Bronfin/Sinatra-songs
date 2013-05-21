@@ -3,6 +3,7 @@ require 'slim'
 require 'sass' 
 
 set :public_folder, 'assets'
+
 get('/styles.css') { scss :styles.to_sym }
 
 get '/' do
